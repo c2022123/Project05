@@ -31,4 +31,27 @@ $(document).ready(function(){
         }
             
     })
-});
+
+    $(".clickToSmall").click(function(){
+        $(".box").animate({
+            marginLeft: "500px",
+            height: "300px"
+        });
+    })
+
+    $(".clickToBig").click(function(){
+        $(".box").animate({
+            marginLeft: "0px",
+            height: "300px",
+        }, 3000);   
+
+    })
+
+    $(".clickToFade").click(function(){
+        $('.boxFade').fadeOut(3000)
+    })
+
+    (".slideToggle").click(function(){
+        $(".boxToggle").slideToggle("1000")
+    })
+})
